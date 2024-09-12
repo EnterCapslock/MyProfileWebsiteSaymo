@@ -88,7 +88,7 @@ footer.footer {
     text-align: right;
 }
 
-
+    
 
 
 /* For "about.html" and "skills.html" */
@@ -110,6 +110,12 @@ h2 {
 }
 
 p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+li {
     font-size: 18px;
     line-height: 1.6;
     color: #333;
