@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile</title>
+</head>
+<body>
+    <h1> MyProfile </h1>
+
+    <nav class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+
+    <div class="alertContainer" id ="alertContainer">
+        <form class="contactForm" id="contact_form" action="contact.html">
+            <label for="form">Form</label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            <br>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <br>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="..." required></textarea>
+            <br>
+            <button type="submit" id="submit_btn">SUBMIT</button>
+    
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p id="copyright">&copy; 2024 Saymo. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
