@@ -18,16 +18,14 @@ contact_form.addEventListener('submit', function(event) {
         showAlert.classList.add('alert_success');
         showAlert.textContent = `Thank you, ${nameValue}! Your message has been received.`;
 
-        // Append the alert to the container
         alertContainer.appendChild(showAlert);
 
-        // Remove the alert after 3 seconds
         setTimeout(() => {
-            showAlert.classList.add('fade-out');
+            showAlert.style.opacity = '0';
             setTimeout(() => {
                 alertContainer.removeChild(showAlert);
-            }, 500); // Matches the CSS transition duration
-        }, 3000); // 3 seconds delay
+            }, 500); 
+        }, 2500); 
     }
     
     name.value = '';
