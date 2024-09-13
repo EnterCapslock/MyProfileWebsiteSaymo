@@ -1,19 +1,18 @@
-let name = document.getElementById("name");
-let email = document.getElementById("email");
-let message = document.getElementById("message");
-let submit_btn = document.getElementById("submit_btn");
+let nameInput = document.getElementById("name");
+let emailInput = document.getElementById("email");
+let messageInput = document.getElementById("message");
+let submitBtn = document.getElementById("submit_btn");
 let alertContainer = document.getElementById("alertContainer");
-let contact_form = document.getElementById('contact_form'); 
+let contactForm = document.getElementById('contact_form');
 
-contact_form.addEventListener('submit', function(event) {
+contactForm.addEventListener('submit', function(event) {
     event.preventDefault();
 
-    let nameValue = name.value.trim();
-    let emailValue = email.value.trim();
-    let messageValue = name.value.trim();
+    let nameValue = nameInput.value.trim();
+    let emailValue = emailInput.value.trim();
+    let messageValue = messageInput.value.trim();
 
     if (nameValue && emailValue && messageValue) {
-        // Create the alert div
         let showAlert = document.createElement('div');
         showAlert.classList.add('alert_success');
         showAlert.textContent = `Thank you, ${nameValue}! Your message has been received.`;
@@ -28,7 +27,7 @@ contact_form.addEventListener('submit', function(event) {
         }, 2500); 
     }
     
-    name.value = '';
-    email.value = '';
-    message.value = '';
+    nameInput.value = '';
+    emailInput.value = '';
+    messageInput.value = '';
 });
