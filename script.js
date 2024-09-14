@@ -13,20 +13,9 @@ contactForm.addEventListener('submit', function(event) {
     let messageValue = messageInput.value.trim();
 
     if (nameValue && emailValue && messageValue) {
-        let showAlert = document.createElement('div');
-        showAlert.classList.add('alert_success');
-        showAlert.textContent = `Thank you, ${nameValue}! Your message has been received.`;
-
-        alertContainer.appendChild(showAlert);
-
-        setTimeout(() => {
-            showAlert.style.opacity = '0';
-            setTimeout(() => {
-                alertContainer.removeChild(showAlert);
-            }, 500); 
-        }, 2500); 
+        alert(`Thank you, ${nameValue}. We've received your message.`);
     }
-    
+
     nameInput.value = '';
     emailInput.value = '';
     messageInput.value = '';
