@@ -14,9 +14,12 @@ contactForm.addEventListener('submit', function(event) {
 
     if (nameValue && emailValue && messageValue) {
         alert(`Thank you! Your message has been sent.`);
-    }
 
-    nameInput.value = '';
-    emailInput.value = '';
-    messageInput.value = '';
+        nameInput.value = '';
+        emailInput.value = '';
+        messageInput.value = '';
+    }
+    else {
+        alert('Error: Invalid input.');
+    }
 });
