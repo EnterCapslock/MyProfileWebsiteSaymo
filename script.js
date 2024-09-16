@@ -1,8 +1,6 @@
 let nameInput = document.getElementById("name");
 let emailInput = document.getElementById("email");
 let messageInput = document.getElementById("message");
-let submitBtn = document.getElementById("btnSubmit");
-let alertContainer = document.getElementById("alertContainer");
 let contactForm = document.getElementById('contactForm');
 
 contactForm.addEventListener('submit', function(event) {
