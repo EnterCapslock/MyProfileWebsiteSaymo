@@ -71,7 +71,10 @@ nav.links a.active {
     padding: 0 20px 0 20px;
 }
 
-/* For footer */
+
+
+
+/* for footer styling */
 footer.footer {
     height: 50px;
     background-color: #494D5F;
@@ -91,8 +94,8 @@ footer.footer {
     
 
 
-/* For "about.html" and "skills.html" */
-main {
+/* for "about.html" and "skills.html" styling */
+.aboutContainer, .skillsContainer {
     width: 80%;
     max-width: 1200px;
     margin: 20px auto;
@@ -124,7 +127,7 @@ li {
 
 
 
-/* For "contact.html" */
+/* for "contact.html" styling */
 .contactForm {
     display: flex;
     justify-content: center;
